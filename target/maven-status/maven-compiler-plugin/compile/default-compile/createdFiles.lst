@@ -1,0 +1,7 @@
+com\zsj\TestApplication.class
+com\zsj\cache\bean\DemoInfo.class
+com\zsj\cache\repository\DemoInfoRepository.class
+com\zsj\cache\service\impl\DemoInfoServiceImpl.class
+com\zsj\cache\service\DemoInfoService.class
+com\zsj\controller\TestController.class
+com\zsj\cache\controller\DemoInfoController.class
