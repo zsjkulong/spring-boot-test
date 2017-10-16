@@ -24,8 +24,9 @@ public class UserInfoController {
 	 * @return
 	 */
 	@RequestMapping("/userAdd")
-	 @RequiresPermissions("userInfo:add1")//权限管理;  
+	 @RequiresPermissions("userInfo:add")//权限管理;  
 	public String userInfoAdd() {
+//		System.out.println("asdf");
 		return "userInfoAdd";
 	}
 

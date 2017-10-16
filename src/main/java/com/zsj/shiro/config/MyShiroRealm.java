@@ -70,6 +70,7 @@ public class MyShiroRealm extends AuthorizingRealm {
 		);
 
 		// 明文: 若存在，将此用户存放到登录认证info中，无需自己做密码对比，Shiro会为我们进行密码对比校验
+		
 		// SimpleAuthenticationInfo authenticationInfo = new
 		// SimpleAuthenticationInfo(
 		// userInfo, //用户名
@@ -100,7 +101,8 @@ public class MyShiroRealm extends AuthorizingRealm {
 		 */
 		System.out.println("权限配置-->MyShiroRealm.doGetAuthorizationInfo()");
 
-		SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
+		SimpleAuthorizationInfo
+		authorizationInfo = new SimpleAuthorizationInfo();
 		UserInfo userInfo = (UserInfo) principals.getPrimaryPrincipal();
 
 		// 实际项目中，这里可以根据实际情况做缓存，如果不做，Shiro自己也是有时间间隔机制，2分钟内不会重复执行该方法
