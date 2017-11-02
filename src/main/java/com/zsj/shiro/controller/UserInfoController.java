@@ -1,6 +1,8 @@
 package com.zsj.shiro.controller;
 
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -8,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/userInfo")
 public class UserInfoController {
 
+	private Logger logger =  LoggerFactory.getLogger(this.getClass());
 	/**
 	 * 用户查询.
 	 * 
@@ -27,6 +30,7 @@ public class UserInfoController {
 	 @RequiresPermissions("userInfo:add")//权限管理;  
 	public String userInfoAdd() {
 //		System.out.println("asdf");
+		logger.info("asdf");
 		return "userInfoAdd";
 	}
 

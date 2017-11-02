@@ -47,7 +47,7 @@ public class ShiroConfiguration {
 
 		// 配置退出过滤器,其中的具体的退出代码Shiro已经替我们实现了
 		filterChainDefinitionMap.put("/logout", "logout");
-
+		filterChainDefinitionMap.put("/favicon.ico", "anon");  
 		
 		filterChainDefinitionMap.put("/index", "user");
         filterChainDefinitionMap.put("/", "user");
